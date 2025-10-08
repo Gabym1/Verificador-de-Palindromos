@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Palíndromos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(#cf8daf);
+           
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        input.form-control {
+            border-radius: 25px;
+            padding: 15px;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        input.form-control:focus {
+            outline: none;
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        button.btn-primary {
+            background: linear-gradient(#a55ad6);
+            border: none;
+            border-radius: 25px;
+            padding: 10px 30px;
+            margin-top: 10px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        button.btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Verificador de Palíndromos</h1>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+                <div class="mb-3">
+                       <input type="text" class="form-control" id="letras" placeholder="Ingresa la palabra">
+                </div>
+                <button id="btn_verificar" class="btn btn-secondary w-100 mb-3">Verificar</button>
+                <p id="resultado" class="text-info"></p>
+            </div>
+        </div>
+    </div>
+    <script src="./bundle.js"></script>  
+    <script src="/src/index.js"></script>
+</body>
+</html>
