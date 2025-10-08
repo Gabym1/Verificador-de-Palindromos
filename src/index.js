@@ -6,7 +6,7 @@ document.getElementById("btn_verificar").addEventListener("click", function() {
   let palabra = "";
   for (let i = 0; i < letras.length; i++) {
     let letra = letras[i].toLowerCase();
-    if ((letra >= 'a' && letra <= 'z') || (letra >= '0' && letra <= '9')) {
+    if ((letra >= 'a' && letra <= 'z')) {
       palabra += letra;
     }
   }
@@ -20,4 +20,6 @@ document.getElementById("btn_verificar").addEventListener("click", function() {
   if (palindromo) {
     alert("¡Es un palíndromo!");
   } else {
-    alert("No es un palíndromo, ingrese, inte
+    alert("No es un palíndromo, ingrese, intenta de nuevo");
+  }
+});
